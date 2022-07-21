@@ -16,10 +16,21 @@ public class Starcraft {
 class Marine {
 	String name;
 	int hp; 
+	
+	Marine(String s, int t){
+		name = s;
+		hp = t;
+	}
 }
 
 class Medic {
 	String name;
 	int hp;
 	int mp;
+	
+	Medic(String s, int i1, int i2){
+		name = s;
+		hp = i1;
+		mp = i2;
+	}
 }
