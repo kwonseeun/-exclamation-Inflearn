@@ -10,6 +10,7 @@ public class Starcraft {
 		ma.stimpack();
 				
 		// 메딕의 힐 
+		me.heal(ma);
 	}
 }
 
@@ -22,7 +23,7 @@ class Marine {
 		hp = t;
 	}
 	void stimpack() {
-		System.out.println("스팀팩 !");
+		System.out.printf(" [%s]의 스팀팩 !: HP: %d -> %s", name , hp, hp);
 	}
 }
 
@@ -35,5 +36,9 @@ class Medic {
 		name = s;
 		hp = i1;
 		mp = i2;
+	}
+	
+	void heal(Marine target){
+		System.out.println("힐 !");
 	}
 }
