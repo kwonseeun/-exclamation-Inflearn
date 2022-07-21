@@ -7,7 +7,7 @@ public class Starcraft {
 		Medic me = new Medic("모랄레스", 60, 60);		
 		
 		// 마린의 스팀팩 
-		
+		ma.stimpack();
 				
 		// 메딕의 힐 
 	}
@@ -20,6 +20,9 @@ class Marine {
 	Marine(String s, int t){
 		name = s;
 		hp = t;
+	}
+	void stimpack() {
+		System.out.println("스팀팩 !");
 	}
 }
 
