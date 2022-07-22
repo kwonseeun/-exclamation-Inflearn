@@ -23,8 +23,9 @@ class Marine {
 		hp = t;
 	}
 	void stimpack() {
-		System.out.printf(" [%s]의 스팀팩 !: HP: %d -> %s", name , hp, hp);
+		System.out.printf(" [%s]의 스팀팩 !: HP: %d\n", name , hp);
 		hp -= 10;
+		System.out.printf("%d\n",hp);
 	}
 }
 
@@ -40,6 +41,6 @@ class Medic {
 	}
 	
 	void heal(Marine target){
-		System.out.println("힐 !");
+		System.out.printf("[%s]의 치유 ! => [%s] HP(%d - > %d)\n", name, target.name, target.hp, target.hp);
 	}
 }
