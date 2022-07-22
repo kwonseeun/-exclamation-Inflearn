@@ -24,6 +24,7 @@ class Marine {
 	}
 	void stimpack() {
 		System.out.printf(" [%s]의 스팀팩 !: HP: %d -> %s", name , hp, hp);
+		hp -= 10;
 	}
 }
 
