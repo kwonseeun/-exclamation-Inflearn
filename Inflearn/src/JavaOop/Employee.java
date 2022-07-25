@@ -15,7 +15,7 @@ public class Employee {
 	}
 }
 
-class Employee{
+class Employee {
 	// 필드 
 	String name;
 	int[] hours;
@@ -30,6 +30,10 @@ class Employee{
 	}
 	
 	int totalHours() {
-		
+		int sum = 0;
+		for (int i = 0; i< hours.length; i ++) {
+			sum += hours[i];
+		}
+		return sum;
 	}
 }
