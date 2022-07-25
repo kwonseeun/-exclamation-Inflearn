@@ -1,10 +1,12 @@
 package JavaOop;
 
-public class Employee {
+public class EmployeeTest {
 
 	public static void main(String[] args) {
+	// 배열 생성 
 	int[] hours0 = {2,4,3,4,5,8,8};
 	
+	// 객체 생성 
 	Employee e0 = new Employee("직원0", hours0);
 	
 	Employee[] employees = { e0 };
@@ -14,7 +16,6 @@ public class Employee {
 		}
 	}
 }
-
 class Employee {
 	// 필드 
 	String name;
@@ -26,7 +27,7 @@ class Employee {
 	}
 	
 	void printTotalHours() {
-		System.out.println("%s -> %d 시간 \n", name, totalHours());
+		System.out.printf("%s -> %d 시간 \n", name, totalHours());
 	}
 	
 	int totalHours() {
@@ -37,3 +38,4 @@ class Employee {
 		return sum;
 	}
 }
+
