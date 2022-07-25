@@ -24,4 +24,12 @@ class Employee{
 		name = str;
 		hours = arr;
 	}
+	
+	void printTotalHours() {
+		System.out.println("%s -> %d 시간 \n", name, totalHours());
+	}
+	
+	int totalHours() {
+		
+	}
 }
