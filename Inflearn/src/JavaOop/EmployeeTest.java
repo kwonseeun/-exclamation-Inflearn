@@ -13,7 +13,7 @@ public class EmployeeTest {
 	
 	
 	// 정보 출력 
-	Employee[] employees = { e0 };
+	Employee[] employees = { e0, e1 };
 	
 	for (int i = 0; i < employees.length; i++) {
 		employees[i].printTotalHours();
