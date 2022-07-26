@@ -15,10 +15,10 @@ public class PlayerTest {
 		Player p2 = new Player("Park", points2);
 		
 		// 객체 배열 만들기 
-		Player[] play = {p0, p1, p2};
+		Player[] players = {p0, p1, p2};
 		
-		for (int i = 0; i < play.length; i++) {
-			Player[i].printTotalPoints();
+		for (int i = 0; i < players.length; i++) {
+			players[i].printTotalPoints();
 		}
 	}
 }
@@ -28,4 +28,20 @@ class Player {
 	// 필드 생성 
 	String name; 
 	int[] points;
+	
+	// 생성자 
+	Player(String str, int[] arr ) {
+		name = str ;
+		points = arr ;
+	}
+	
+	// 메소드 
+	void printTotalPoints() {
+		System.out.printf("%s -> %d점 \n", name, totalPoint());
+	}
+	
+	int totalPoint() {
+		
+		return 0;
+	}
 }
