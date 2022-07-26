@@ -25,7 +25,7 @@ public class EmployeeTest {
 	
 	
 	// 정보 출력 ₩
-	Employee[] employees = { e0, e1 };
+	Employee[] employees = { e0, e1, e2, e3, e4, e5, e6, e7 };
 	
 	for (int i = 0; i < employees.length; i++) {
 		employees[i].printTotalHours();
